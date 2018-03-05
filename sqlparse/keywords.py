@@ -81,7 +81,8 @@ SQL_REGEX = {
 
         (r'[;:()\[\],\.]', tokens.Punctuation),
         (r'[<>=~!]+', tokens.Operator.Comparison),
-        (r'[+/@#%^&|`?^-]+', tokens.Operator),
+        (r'[+/@#%^&|?^-]+', tokens.Operator),
+        (r'[`]+', tokens.Operator),
     ]}
 
 FLAGS = re.IGNORECASE | re.UNICODE
